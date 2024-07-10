@@ -11,7 +11,7 @@ def GetDadJoke():
 	try:
 		r = requests.get(
 			'https://icanhazdadjoke.com', 
-			headers={"Accept": "application/json", "User-Agent": "My Library (https://github.com/vanakenm/icanhazdadjoke-python)"}
+			headers={"Accept": "application/json", "User-Agent": "My Library (https://github.com/neoporcupine/dadjoke)"}
 		)
 		joke = r.json()['joke']
 	except:
